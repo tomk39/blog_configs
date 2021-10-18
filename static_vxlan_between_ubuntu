@@ -1,6 +1,7 @@
-#Config for static vxlan
-#Details you can find on https://tomislavk.blog/vxlan/overlay/linux/static_vxlan_part1/
-***Apply configuration on srv.***
+**Config for static vxlan**
+Details you can find on https://tomislavk.blog/vxlan/overlay/linux/static_vxlan_part1/
+
+**Apply configuration on srv.**
 ip netns add vm3 
 ip link add br-vxlan type bridge
 ip link set br-vxlan up
@@ -17,7 +18,7 @@ ip link set vx0 up
 ip link set vx0 master br-vxlan
 bridge fdb append 00:00:00:00:00:00 dev vx0 dst 192.168.100.21
 
-***Apply configuration on srv1.***
+**Apply configuration on srv1.**
 ip netns add vm1
 ip link add br-vxlan type bridge
 ip link set br-vxlan up
