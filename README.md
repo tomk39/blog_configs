@@ -1,6 +1,5 @@
-### Configs from the Tomislav Kranjec Blog  
 
-Hi folks,  
+**Hi folks,**  
 
 Here you can find full configs from my blog https://tomislavk.blog.
 
